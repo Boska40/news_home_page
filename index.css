@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #E6E6FA;
+}
+.container{
+    background: #fff;
+    padding: 0 5rem;
+}
+.container .nav{
+    height: 80px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.nav nav{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav nav ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+.nav nav ul li{
+    list-style: none;
+    padding-right: 30px;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+.nav nav ul li:last-child {
+    padding-right: 0px;
+}
+.nav nav ul li:hover{
+    color: #FF6347;
+}
+.nav nav .logo {
+    height: 40px;
+}
+.nav nav .menu{
+    height: 30px;
+    display: none;
+}
+
+
+.data{
+    display: flex;
+}
+.color{
+    margin-right: 30px;
+    flex: 2;
+}
+.color .image{
+    width:100% ;
+}
+.color .image img{
+    width: 100%;
+    height: 100%;
+}
+.color .title{
+    margin-top: 20px;
+}
+.color .title h1{
+    font-weight: bold;
+    font-size: 45px;
+    letter-spacing: 1;
+}
+.color .text{
+    color: #C0C0C0;
+    margin-left: auto;
+}
+.color .text p{
+    padding-bottom: 55px;
+}
+.color .text button{
+    color: #fff;
+    background: #FF6347;
+    height: 30px;
+    text-decoration: none;
+    font-size: 9px;
+    border: none;
+    outline: none;
+    letter-spacing: 1;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.color .text button:hover{
+    background: #FA8072;
+    font-size:12px ;
+}
+
+.infos{
+    flex: 1;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),#191970;
+    color: #fff;
+    text-align: justify;
+    padding: 20px 15px 0 15px;
+}
+.infos a:hover{
+    color: #DAA520;
+    cursor: pointer;
+}
+.infos h2{
+    color: #DAA520;
+}
+.infos a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.infos p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.infos hr{
+    margin-bottom: 10px;
+}
+
+
+
+.boxBox{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+}
+.boxBox .box{
+    flex: 1;
+    height: 100%;
+    display: flex;
+}
+.boxBox .box .box-1{
+    width: 90px;
+    height: 150px;
+    overflow: hidden;
+}
+.boxBox .box .box-2{
+    height: 150px;
+    padding-left: 10px;
+    flex: 1;
+}
+
+.box-2 h2{
+    color: #C0C0C0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.box-2 a{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.box-2 a:hover{
+    color: #FF6347;
+}
+.box-2 .grey{
+    color: #C0C0C0;
+    padding-top: 5px;
+    font-size: 13px;
+    text-align: justify;
+}
+.boxBox .box .box-1{
+    margin-right: 5px;
+}
+.boxBox .box .box-1 img{
+    width: 100%;
+}
+
+.DropMenu{
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    background-color: #fff;
+    z-index: 10;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    /* display: none; */
+}
+.DropMenu.open {
+    right: 0;
+}
+.DropMenu img{
+    height: 30px;
+    margin-top: 20px;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.DropMenu ul {
+    margin-top: 150px;
+    float: left;
+    padding-left: 20px;
+}
+.DropMenu ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.DropMenu ul li:hover{
+    color: #FF6347;
+}
+
+@media (max-width: 766px) {
+    .container{
+        padding: 0 1rem;
+    }
+    
+    .nav nav ul{
+        display: none;
+    }
+    .nav nav .menu{
+        display: block;
+    }
+
+    .data {
+        flex-direction: column;
+    }
+    .color{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .boxBox {
+        flex-direction: column;
+    }
+}

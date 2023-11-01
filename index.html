@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: 'Inter';font-size: 15px;
+            font-weight: 400;
+        }
+    </style>
+    <title>news home-page main</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav">
+            <nav>
+                <img class="logo" src="logo.svg" alt="">
+                <ul>
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Popular</li>
+                    <li>Trending</li>
+                    <li>Categories</li>
+                </ul>
+                <img class="menu" onclick="menuDrop()" src="icon-menu.svg" alt="">
+            </nav>
+            <div id="DropMenu" class="DropMenu">
+                <img onclick="menuClose()" src="icon-menu-close.svg" alt="">
+                <ul>
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Popular</li>
+                    <li>Trending</li>
+                    <li>Categories</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="data">
+            <div class="color">
+                <div class="image"><img src="image-web-3-desktop.jpg" alt=""></div>
+                <div class="title">
+                    <h1>The Bright <br>Future of <br> Web 3.0?</h1>
+                </div>
+                <div class="text">
+                    <p>We dive into the next evolution of the web that claims to put the power of
+                        the platforms back into the hands of the people. But it is really fulfilling its promise?
+                    </p>
+                    <button type="button">READ MORE</button>
+                </div>
+            </div>
+
+            <div class="infos">
+                <h2>New</h2>
+                <a href="">Hydrogen VS Electric Cars</a>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <hr>
+
+                <a href="">The Downsides of AI Artistry</a>
+                <p>What are the possible adverse effects of on-demand AI image generetion? </p>
+                <hr>
+
+                <a href="">Is VC Funding Driying Up?</a>
+                <p>Private Funding by VC firms down 50% YOY. We take a look at what that means.</p>
+            </div>
+        </div>
+
+        <div class="boxBox">
+            <div class="box">
+                <div class="box-1">
+                    <img src="image-retro-pcs.jpg" alt="">
+                </div>
+                <div class="box-2">
+                    <h2>01</h2>
+                    <a href="">Reviving Retro PCs</a>
+                    <h3 class="grey">happens when old PCs <br>are given modern upgrades?</h3> 
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-1">
+                    <img src="image-top-laptops.jpg" alt="">
+                </div>
+                <div class="box-2">
+                    <h2>02</h2>
+                    <a href="">Top 10 Laptops on 2022</a>
+                    <h3 class="grey">Our best picks for various <br>needs and budgets.</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-1">
+                    <img src="image-gaming-growth.jpg" alt="">
+                </div>
+                <div class="box-2">
+                    <h2>03</h2>
+                    <a href="">The Growth of Gaming</a>
+                    <h3 class="grey">How the pandemic has sparked <br>fresh opportunities.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
